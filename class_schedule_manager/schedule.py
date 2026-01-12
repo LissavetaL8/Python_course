@@ -36,3 +36,7 @@ class Schedule:
         """Печать всего расписания."""
         for e in self._events:
             print(e)
+
+if __name__ == '__main__':
+    ...
+    
