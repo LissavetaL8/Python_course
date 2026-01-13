@@ -7,14 +7,14 @@ class Schedule:
 
     def __init__(self):
         """ принимает созданное расписание занятий
-        :return: none """
+        :return: None """
         self._events = [] #список в котором будет храниться расписание занятий
 
     def add_event(self, event):
         
         """:event: объект, который нужно добавить в список
         :event.dt: Используется для проверки занятости времени
-        :self._events: Список, в который добавляется новое событие"""
+        :events: Список, в который добавляется новое событие"""
         
         if self.check_conflict(event.dt):
             print(f"Ошибка: Конфликт расписания на {event.dt}")
@@ -26,13 +26,13 @@ class Schedule:
     def remove_event(self, subject, dt):
         """Удаляет занятие по названию и времени
         принимает созданное расписание занятий, название предмета, который нужно удалить
-        :return: none"""
+        :return: None"""
         self._events = [e for e in self._events if not (e.subject == subject and e.dt == dt)]
 
     def check_conflict(self, dt):
         """Проверяет, занято ли указанное время
         принимает расписание и время события
-        :return: bool"""
+        :return: true, если время занято другой дисциплиной или False, если указанный интервал времени свободен"""
         
         for e in self._events:
             if abs(e.dt - dt) < timedelta(hours=1, minutes=30):
@@ -56,6 +56,7 @@ class Schedule:
 if __name__ == '__main__':
     ...
     
+
 
 
 
