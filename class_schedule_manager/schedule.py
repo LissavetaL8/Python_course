@@ -3,7 +3,7 @@ from datetime import timedelta
 
 
 class Schedule:
-    """Класс для хранения и обработки списка событий."""
+    """Класс для хранения и обработки списка занятий."""
 
     def __init__(self):
         self._events = []
@@ -18,7 +18,7 @@ class Schedule:
         return True
 
     def remove_event(self, subject, dt):
-        """Удаляет событие по названию и времени."""
+        """Удаляет занятие по названию и времени."""
         self._events = [e for e in self._events if not (e.subject == subject and e.dt == dt)]
 
     def check_conflict(self, dt):
@@ -40,3 +40,4 @@ class Schedule:
 if __name__ == '__main__':
     ...
     
+
