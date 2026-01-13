@@ -1,6 +1,6 @@
-from class_schedul_manager.event import Event
-from class_schedul_manager.schedule import Schedule
-from class_schedul_manager.teacher import Teacher
+from class_schedule_manager.event import Event
+from class_schedule_manager.schedule import Schedule
+from class_schedule_manager.teacher import Teacher
 
 
 def main():
@@ -31,6 +31,7 @@ def main():
 if __name__ == "__main__":
     main()
     
+
 
 
 
