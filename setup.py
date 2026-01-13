@@ -8,12 +8,11 @@ setup(
     url='https://github.com/...', # Адрес репозитория с вашей курсовой работой.
     license='Apache-2.0',
     author='...', # ФИО автора.
-    author_email='...', # Электронная почта автора.
+    author_email='Лопатинская Елизавета Сергеевна', # Электронная почта автора.
     description='...', # Описание вашей поделки. Что она может, для чего сделана.
     include_package_data=True,
-    install_requires=[
-      # Список зависимостей если есть.
-      ],
+    install_requires=[],
 )
+
 
 
