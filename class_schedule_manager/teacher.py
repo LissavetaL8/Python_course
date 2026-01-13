@@ -13,10 +13,10 @@ class Teacher:
         self.__name = name
         self.__department = department
 
-   @property
+@property
     def name(self):
         """ Геттер для обращения к приватной переменной __name.
-        Позволяет читать имя, не изменяя его.
+        Позволяет читать имя, но не изменять его напрямую.
         :return: значение приватного атрибута __name """
         return self.__name
         
@@ -31,6 +31,7 @@ class Teacher:
 if __name__ == '__main__':
     ...
     
+
 
 
 
