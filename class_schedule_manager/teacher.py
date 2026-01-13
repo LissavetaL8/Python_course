@@ -5,6 +5,7 @@ class Teacher:
     """Класс преподавателя."""
 
     def __init__(self, name, department):
+        """ вносит данные о преподавателе """
         self.__name = name
         self.__department = department
 
@@ -16,4 +17,5 @@ class Teacher:
 if __name__ == '__main__':
     ...
     
+
 
